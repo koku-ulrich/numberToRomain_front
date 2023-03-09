@@ -1,14 +1,17 @@
 <template>
   <numberToRomain msg="Number to roman letters conversion"/>
+  <numberToRomainSSE msg="Number to roman letters conversion with SSE"/>
 </template>
 
 <script>
 import numberToRomain from './components/numberToRomain.vue'
+import numberToRomainSSE from './components/numberToRomainSSE.vue'
 
 export default {
   name: 'App',
   components: {
-    numberToRomain
+    numberToRomain,
+    numberToRomainSSE
   }
 }
 </script>
