@@ -37,7 +37,7 @@ export default {
     convertNumber: async function (e) {
       e.preventDefault();
       this.response = {};
-      axios.post(process.env.VUE_APP_API_URL + "/numberToRomain", this.form).then(response => {
+      this.response = await axios.post(process.env.VUE_APP_API_URL + "/numberToRomain", this.form).then(response => {
         return response.data
       }).catch(error =>{
         return error.response.data
