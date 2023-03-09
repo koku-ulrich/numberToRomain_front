@@ -1,5 +1,5 @@
 .DS_Store
-../jolimoi_front/node_modules
+/node_modules
 /dist
 
 
